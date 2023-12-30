@@ -16,7 +16,7 @@ public:
 
     bool sauvegarder(const string& nomFichier);
 
-    bool creerFichierIni(const string& nomFichier, string nameSoft);
+    bool creerFichierIni(const string& nomFichier);
 
     string obtenirParametre(const string& cle);
 
@@ -69,7 +69,7 @@ void Cconfiguration::definirParametre(const string& cle, const string& valeur) {
     parametres[cle] = valeur;
 }
 
-bool Cconfiguration::creerFichierIni(const string& nomFichier,string nameSoft ) {
+bool Cconfiguration::creerFichierIni(const string& nomFichier ) {
     ofstream fichier(nomFichier);
     if (!fichier.is_open()) {
         return false;
