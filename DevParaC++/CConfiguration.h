@@ -12,6 +12,11 @@ private:
     unordered_map<string,string> parametres;
 
 public:
+
+    Cconfiguration();
+
+    ~Cconfiguration();
+
     bool charger(const string& nomFichier);
 
     bool sauvegarder(const string& nomFichier);
@@ -25,6 +30,15 @@ public:
     //void supprimerParametre(const string& cle);
 };
 
+Cconfiguration::Cconfiguration()
+{
+
+}
+
+Cconfiguration::~Cconfiguration() 
+{
+
+}
 
 bool Cconfiguration::charger(const string& nomFichier) {
     ifstream fichier(nomFichier);
