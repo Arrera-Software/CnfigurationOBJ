@@ -22,7 +22,7 @@ public:
 
     void definirParametre(const string& cle, const string& valeur);
 
-    void supprimerParametre(const string& cle);
+    //void supprimerParametre(const string& cle);
 };
 
 
@@ -77,10 +77,11 @@ bool Cconfiguration::creerFichierIni(const string& nomFichier,string nameSoft ) 
     fichier.close();
     return true;
 }
-
+/*
 void  Cconfiguration::supprimerParametre(const std::string& cle) {
     auto it = parametres.find(cle);
     if (it != parametres.end()) {
         parametres.erase(it);
     }
 }
+*/
