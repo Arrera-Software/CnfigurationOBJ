@@ -72,7 +72,6 @@ bool Cconfiguration::creerFichierIni(const string& nomFichier,string nameSoft ) 
     if (!fichier.is_open()) {
         return false;
     }
-    fichier <<"[" << nameSoft << "]" << "\n";
     fichier.close();
     return true;
 }
